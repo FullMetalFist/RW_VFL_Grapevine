@@ -45,57 +45,6 @@ class ViewController: UIViewController {
   
   private var allConstraints: [NSLayoutConstraint] = []
   
-//  override func viewDidLoad() {
-//    super.viewDidLoad()
-//
-////    appImageView.isHidden = true
-////    welcomeLabel.isHidden = true
-////    summaryLabel.isHidden = true
-////    pageControl.isHidden = true
-//
-//    let views: [String: Any] = [
-//      "iconImageView": iconImageView,
-//      "appNameLabel": appNameLabel,
-//      "skipButton": skipButton,
-//      "appImageView": appImageView,
-//      "welcomeLabel": welcomeLabel,
-//      "summaryLabel": summaryLabel,
-//      "pageControl": pageControl]
-//
-//    let metrics = ["horizontalPadding": Metrics.padding, "iconImageViewWidth": Metrics.iconImageViewWidth]
-//
-//    var allConstraints: [NSLayoutConstraint] = []
-//    let options = NSLayoutFormatOptions(rawValue: 0)
-//    let iconVerticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|-23-[iconImageView(30)]", options: options, metrics: nil, views: views)
-//    allConstraints.append(contentsOf: iconVerticalConstraints)
-//    //let nameLabelVerticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|-23-[appNameLabel]", options: options, metrics: nil, views: views)
-//    //allConstraints.append(contentsOf: nameLabelVerticalConstraints)
-//    //let skipButtonVerticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|-20-[skipButton]", options: options, metrics: nil, views: views)
-//    //allConstraints.append(contentsOf: skipButtonVerticalConstraints)
-//
-//
-//    let topRowHorizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-horizontalPadding-[iconImageView(iconImageViewWidth)]-[appNameLabel]-[skipButton]-horizontalPadding-|", options: [.alignAllCenterY], metrics: metrics, views: views)
-//    allConstraints.append(contentsOf: topRowHorizontalConstraints)
-//
-//    let summaryHorizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-horizontalPadding-[summaryLabel]-horizontalPadding-|", options: options, metrics: metrics, views: views)
-//    allConstraints.append(contentsOf: summaryHorizontalConstraints)
-//    //let welcomeHorizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-15-[welcomeLabel]-15-|", options: options, metrics: nil, views: views)
-//    //allConstraints.append(contentsOf: welcomeHorizontalConstraints)
-//
-//
-//    let iconToImageVerticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:[iconImageView]-10-[appImageView]", options: options, metrics: nil, views: views)
-//    allConstraints.append(contentsOf: iconToImageVerticalConstraints)
-//    let imageToWelcomeVerticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:[appImageView]-10-[welcomeLabel]", options: [.alignAllCenterX], metrics: nil, views: views)
-//    allConstraints.append(contentsOf: imageToWelcomeVerticalConstraints)
-//    let summaryLabelVerticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:[welcomeLabel]-4-[summaryLabel]", options: [.alignAllLeading, .alignAllTrailing], metrics: nil, views: views)
-//    allConstraints.append(contentsOf: summaryLabelVerticalConstraints)
-//    let summaryToPageVerticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:[summaryLabel]-horizontalPadding-[pageControl(9)]-horizontalPadding-|", options: [.alignAllCenterX], metrics: metrics, views: views)
-//    allConstraints.append(contentsOf: summaryToPageVerticalConstraints)
-//
-//
-//    NSLayoutConstraint.activate(allConstraints)
-//  }
-  
   override func viewSafeAreaInsetsDidChange() {
     super.viewSafeAreaInsetsDidChange()
     
